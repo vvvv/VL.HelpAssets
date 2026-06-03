@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="EpNhJx3oilAOXp6nCqrw8k" LanguageVersion="2025.7.2" Version="0.128">
+  <NugetDependency Id="DB0ZwREP8dmNR0m89D4SrS" Location="VL.CoreLib" Version="2025.7.2" />
+  <Patch Id="KPCaPrMgaLbMYPRWv86mpR">
+    <Canvas Id="GpJWlm3vs6VP558X2PjvXH" DefaultCategory="System.Help" CanvasType="FullCategory">
+      <!--
+
+    ************************ SoundAsset ************************
+
+-->
+      <Node Name="SoundAsset" Bounds="527,201" Id="GMJX0MVHxSLNWRAToSMel0">
+        <p:NodeReference>
+          <Choice Kind="ContainerDefinition" />
+        </p:NodeReference>
+        <Patch Id="HcCSVnjT3ahPhkqeMXDmNT">
+          <Canvas Id="OsY77kpCNojMAjTIWOaBLT" CanvasType="Group">
+            <Node Bounds="539,211,67,26" Id="GAUYp3nKqp1NE67rTMRULQ">
+              <p:NodeReference LastCategoryFullName="Primitive.DynamicEnum" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="Tag" />
+              </p:NodeReference>
+              <Pin Id="Ian5zLr7xkWLzMOuXImJy9" Name="Input" Kind="StateInputPin" />
+              <Pin Id="IRIFKV7wIKxOl8TR9YnnQw" Name="Output" Kind="OutputPin" IsHidden="true" />
+              <Pin Id="AfhpuYt9TEULj9E993q3eH" Name="Tag" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="G4zlDgKxpNfQIUlfyZ9SiL" Bounds="541,339" />
+            <ControlPoint Id="Ki97awegZAKN0HUg5ImHDp" Bounds="541,180" />
+            <Node Bounds="539,290,48,19" Id="GnyPi6rY0DOQAme2HYQ5Mc">
+              <p:NodeReference LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="ToPath" />
+              </p:NodeReference>
+              <Pin Id="NUv8eIorog4Lx2U3hPD7EY" Name="Input" Kind="InputPin" />
+              <Pin Id="HsUKQvIDfmSP7XFfBanssP" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="539,250,55,19" Id="AZjWoF2ErtWMBPuFrZZFhO">
+              <p:NodeReference LastCategoryFullName="System.Conversion" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="ToString" />
+              </p:NodeReference>
+              <Pin Id="K4Bzy5kfS9MQUxQqvtA3vx" Name="Input" Kind="InputPin" />
+              <Pin Id="KeXjt7IYpW2LKLIxEo2XsW" Name="Result" Kind="OutputPin" />
+            </Node>
+          </Canvas>
+          <Patch Id="Ec0ymwAs7A2NqKn2PYsLZ4" Name="Create" />
+          <Patch Id="VH9gPpiWcskLUNaBuhLShs" Name="Update">
+            <Pin Id="H98tTiTgkreOYsVt3x6Bsn" Name="File Path" Kind="OutputPin" />
+            <Pin Id="QTTuNADq9VeLkh3FTOZ4Hb" Name="Asset" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="System.Help" LastDependency="VL.HelpAssetsUtils.csproj">
+                <Choice Kind="TypeFlag" Name="SoundAsset" />
+              </p:TypeAnnotation>
+            </Pin>
+          </Patch>
+          <ProcessDefinition Id="ULb2nUb1uZ1NwI66uD9fxS">
+            <Fragment Id="N328OENNMLCPLEkHAMSeso" Patch="Ec0ymwAs7A2NqKn2PYsLZ4" Enabled="true" />
+            <Fragment Id="JiE6VAIYboqOfvXMbFFO9t" Patch="VH9gPpiWcskLUNaBuhLShs" Enabled="true" />
+          </ProcessDefinition>
+          <Link Id="BjBcoMviZGLPZPlhUkCTyj" Ids="AfhpuYt9TEULj9E993q3eH,K4Bzy5kfS9MQUxQqvtA3vx" />
+          <Link Id="JtXw1w2OsajPTPriaNhDM1" Ids="G4zlDgKxpNfQIUlfyZ9SiL,H98tTiTgkreOYsVt3x6Bsn" IsHidden="true" />
+          <Link Id="HckcTau3yP7OQiAy89UGAe" Ids="Ki97awegZAKN0HUg5ImHDp,Ian5zLr7xkWLzMOuXImJy9" />
+          <Link Id="KUtgsEOnPP7Ocg59BEvlcR" Ids="QTTuNADq9VeLkh3FTOZ4Hb,Ki97awegZAKN0HUg5ImHDp" IsHidden="true" />
+          <Link Id="ODV4Ejx9x0kLxDZ2TVHbow" Ids="HsUKQvIDfmSP7XFfBanssP,G4zlDgKxpNfQIUlfyZ9SiL" />
+          <Link Id="Ds1vCxM7axyLOm3poHuKTI" Ids="KeXjt7IYpW2LKLIxEo2XsW,NUv8eIorog4Lx2U3hPD7EY" />
+        </Patch>
+      </Node>
+      <!--
+
+    ************************ ImageAsset ************************
+
+-->
+      <Node Name="ImageAsset" Bounds="527,260" Id="HcZrMhGXLU8LdE0ZeSsZsL">
+        <p:NodeReference>
+          <Choice Kind="ContainerDefinition" />
+        </p:NodeReference>
+        <Patch Id="LaZalMzYnnFPtXOqvc7akw">
+          <Canvas Id="Ag95CJVz6HRMLAnbTf4Gkp" CanvasType="Group">
+            <Node Bounds="539,211,67,26" Id="K92HHOYwf20MiRxIHCcI4o">
+              <p:NodeReference LastCategoryFullName="Primitive.DynamicEnum" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="Tag" />
+              </p:NodeReference>
+              <Pin Id="BXVlf9H6FlDOOcAsmpW27n" Name="Input" Kind="StateInputPin" />
+              <Pin Id="UtT0NYMY0ZsMO0ue7n2DdX" Name="Output" Kind="OutputPin" IsHidden="true" />
+              <Pin Id="RyglxK4YbK3QdpL9xil8Wn" Name="Tag" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="SMekDva5j1rPBLqnue9qfj" Bounds="541,339" />
+            <ControlPoint Id="Gq0P3vBnBphO5Qh2UAwQlh" Bounds="541,180" />
+            <Node Bounds="539,290,48,19" Id="JbdguinDeAzOjGXeqwY4sz">
+              <p:NodeReference LastCategoryFullName="IO" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="ToPath" />
+              </p:NodeReference>
+              <Pin Id="B9qQu7IjpEpLc58Hf2l4Q7" Name="Input" Kind="InputPin" />
+              <Pin Id="KQbbu44NSDoOxT248RJsjt" Name="Result" Kind="OutputPin" />
+            </Node>
+            <Node Bounds="539,250,55,19" Id="PRHJmqBPD9ePVruuYPPTOw">
+              <p:NodeReference LastCategoryFullName="System.Conversion" LastDependency="VL.CoreLib.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="ToString" />
+              </p:NodeReference>
+              <Pin Id="DS7VuI9KkJMLD5cUvh9EXn" Name="Input" Kind="InputPin" />
+              <Pin Id="TwP6YSlMYmJOzj7Wk8FJom" Name="Result" Kind="OutputPin" />
+            </Node>
+          </Canvas>
+          <Patch Id="ULT4DYBvmiWN9SZrcLxvUQ" Name="Create" />
+          <Patch Id="OpMaPR9MRMGPmNBI5JPDAv" Name="Update">
+            <Pin Id="SxKmo0DRwJ5OV7LQDILduu" Name="File Path" Kind="OutputPin" />
+            <Pin Id="IS7nm4Cgj0LPXjxb6qsf43" Name="Asset" Kind="InputPin">
+              <p:TypeAnnotation LastCategoryFullName="System.Help" LastDependency="VL.HelpAssetsUtils.csproj">
+                <Choice Kind="TypeFlag" Name="ImageAsset" />
+              </p:TypeAnnotation>
+            </Pin>
+          </Patch>
+          <ProcessDefinition Id="SljzgKjye5bOONvMTfLr52">
+            <Fragment Id="HgR8vpTxlSKNAUJb98Tbl7" Patch="ULT4DYBvmiWN9SZrcLxvUQ" Enabled="true" />
+            <Fragment Id="TSOtN77yeV1PmOwNKMcWkU" Patch="OpMaPR9MRMGPmNBI5JPDAv" Enabled="true" />
+          </ProcessDefinition>
+          <Link Id="Tt6tn6QUTbWN37OG9SBssy" Ids="RyglxK4YbK3QdpL9xil8Wn,DS7VuI9KkJMLD5cUvh9EXn" />
+          <Link Id="EmoTI7TAxd1N4mUJ6S1nhQ" Ids="SMekDva5j1rPBLqnue9qfj,SxKmo0DRwJ5OV7LQDILduu" IsHidden="true" />
+          <Link Id="RLnXonpoCqiNGY1ADOjsFZ" Ids="Gq0P3vBnBphO5Qh2UAwQlh,BXVlf9H6FlDOOcAsmpW27n" />
+          <Link Id="U8XvuN7G5rhOtcXgS4c4RC" Ids="IS7nm4Cgj0LPXjxb6qsf43,Gq0P3vBnBphO5Qh2UAwQlh" IsHidden="true" />
+          <Link Id="SFymDcp2CEpNJWnRVmBGsC" Ids="KQbbu44NSDoOxT248RJsjt,SMekDva5j1rPBLqnue9qfj" />
+          <Link Id="QXGheraJbDoOI5bJbwuVxT" Ids="TwP6YSlMYmJOzj7Wk8FJom,B9qQu7IjpEpLc58Hf2l4Q7" />
+        </Patch>
+      </Node>
+    </Canvas>
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="DcbQs9cmxKuOG3D86BdIn1">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="SRb29WITJPfLE8KbRxKXL9">
+        <Canvas Id="RFuC0a72ps4PDIW4JaEfNm" CanvasType="Group" />
+        <Patch Id="I3fClvSsyOCNIPy6BoIatY" Name="Create" />
+        <Patch Id="HXHN3LvwyA0LId7jj3snyE" Name="Update" />
+        <ProcessDefinition Id="ImZZdM2Oa8qLKA3Nnfi7n0">
+          <Fragment Id="LeuuC2XBzmlOsf3jpNAouT" Patch="I3fClvSsyOCNIPy6BoIatY" Enabled="true" />
+          <Fragment Id="V4oBqCU586NL9vsN7I2Hy9" Patch="HXHN3LvwyA0LId7jj3snyE" Enabled="true" />
+        </ProcessDefinition>
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="EQrnGWb5pi9OI0YSjTWm2o" Location="VL.Stride" Version="2025.7.2" />
+  <PlatformDependency Id="GIgT0KTYMmwN1P8YO7r4FY" Location="./lib/net8.0/VL.HelpAssets.dll" />
+</Document>

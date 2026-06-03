@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="GkWJSxHhxZnNwbQOalljjR" LanguageVersion="2025.7.2" Version="0.128">
+  <NugetDependency Id="IyiAeVnJn8eOFmQNS7tLA5" Location="VL.CoreLib" Version="2025.7.2" />
+  <Patch Id="LiSblKyYbg0MvObrqHz81g">
+    <Canvas Id="FthWPMWPZoIPjTzhNXeOA2" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="NM78x0qD26hPPuU9DzB59l">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <CategoryReference Kind="Category" Name="Primitive" />
+      </p:NodeReference>
+      <Patch Id="MlFcDBRindDNSvFrZzYJ2E">
+        <Canvas Id="OUydJ9rRCczL9LQmhh3koc" CanvasType="Group">
+          <Node Bounds="329,237,69,19" Id="Gs5yV6RYZCaO8Eo39d82En">
+            <p:NodeReference LastCategoryFullName="System.Help" LastDependency="VL.HelpAssets.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="SoundAsset" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="NG0k8OYn7LiLfjXMsjZTxD" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="E7LMLqei1dYOiFApFUzJSB" Name="Asset" Kind="InputPin" />
+            <Pin Id="Csn2vcUxPIkNJvSE7e8rB6" Name="File Path" Kind="OutputPin" />
+          </Node>
+          <Pad Id="C5k4c3PdfnqLoSUahlVNwE" Comment="File Path" Bounds="331,288,244,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="GUj5laHAwKzQdc4CBOELmp" Comment="Asset" Bounds="331,210,198,15" ShowValueBox="true" isIOBox="true" Value="kick-hardstyle-sample-149280.mp3">
+            <p:TypeAnnotation LastCategoryFullName="System.Help" LastDependency="VL.HelpAssetsUtils.csproj">
+              <Choice Kind="TypeFlag" Name="SoundAsset" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="728,237,69,19" Id="TlXUvVeLyxAN0muRkJWrVh">
+            <p:NodeReference LastCategoryFullName="System.Help" LastDependency="VL.HelpAssets.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="ImageAsset" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="CtRWMRSfGI9OElQmA7chaA" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="FsLj4EyAOH3Mlr6EZ4kLAg" Name="Asset" Kind="InputPin" />
+            <Pin Id="CZ6nKBBBxbZMuTfNBqS5WY" Name="File Path" Kind="OutputPin" />
+          </Node>
+          <Pad Id="RxoJfGd3HS6PYaq3XL8VoL" Comment="File Path" Bounds="730,288,244,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="VcC9HZI2rbgOnSBO4vPi53" Comment="Asset" Bounds="730,210,169,15" ShowValueBox="true" isIOBox="true" Value="ExampleTexture_Basecolor.jpg">
+            <p:TypeAnnotation LastCategoryFullName="System.Help" LastDependency="VL.HelpAssetsUtils.csproj">
+              <Choice Kind="TypeFlag" Name="ImageAsset" />
+            </p:TypeAnnotation>
+          </Pad>
+        </Canvas>
+        <Patch Id="PyriZam5GfOMiZxD9Ulfu7" Name="Create" />
+        <Patch Id="U2fiaQWr4QGNYMvTcXS899" Name="Update" />
+        <ProcessDefinition Id="JCAzRK6tok6QR2kjPJFzuF">
+          <Fragment Id="JciO9jKWpwxNyjgWhnCaDV" Patch="PyriZam5GfOMiZxD9Ulfu7" Enabled="true" />
+          <Fragment Id="UoKlCbIpoX7PUanQEgwcSb" Patch="U2fiaQWr4QGNYMvTcXS899" Enabled="true" />
+        </ProcessDefinition>
+        <Link Id="S7u3cFlxeIwNuk8gQhAv3R" Ids="Csn2vcUxPIkNJvSE7e8rB6,C5k4c3PdfnqLoSUahlVNwE" />
+        <Link Id="LwgbgCZpXeZMyfhaEfhMg9" Ids="GUj5laHAwKzQdc4CBOELmp,E7LMLqei1dYOiFApFUzJSB" />
+        <Link Id="UAxKavKmN55NvdKvPnboYl" Ids="CZ6nKBBBxbZMuTfNBqS5WY,RxoJfGd3HS6PYaq3XL8VoL" />
+        <Link Id="QTIiVXvrrwENt1gX1ynVfz" Ids="VcC9HZI2rbgOnSBO4vPi53,FsLj4EyAOH3Mlr6EZ4kLAg" />
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="RJi8O243sx0MqfJSP4xn7I" Location="VL.HelpAssets" Version="0.0.0" />
+</Document>
