@@ -3,7 +3,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.HelpAssets</id>
-    <version>0.0.1-alpha</version>
+    <version>0.0.2-alpha</version>
     <title>VL.HelpAssets</title>
     <authors>vvvv</authors>
     <projectUrl>https://github.com/vvvv/VL.HelpAssets</projectUrl>
@@ -15,12 +15,8 @@
     <readme>docs\README.md</readme>
   </metadata>
   <files>
-    <file src="..\sounds\**" target="sounds\" exclude="" />
-    <file src="..\images\**" target="images\" exclude="" />
-    <file src="..\misc\**" target="misc\" exclude="" />
-    <file src="..\models\**" target="models\" exclude="" />
-    <file src="..\svgs\**" target="svgs\" exclude="" />
-    <file src="..\movies\**" target="movies\" exclude="" />
+    <file src="..\assets\**" target="assets\" exclude="" />
+    <file src="..\build\**" target="build\" exclude="" />
     <file src="..\lib\**\*.dll" target="lib\" exclude="" />
     <file src="..\*.vl" target="" exclude="" />
     <file src="..\help\**" target="help\" exclude="" />

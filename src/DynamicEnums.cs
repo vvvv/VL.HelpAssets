@@ -7,7 +7,7 @@ static class Helper
 {
     public static IReadOnlyDictionary<string, object> GetFiles(string path)
     {
-        var basepath = AppHost.Current.GetPackagePath("VL.HelpAssets");
+        var basepath = AppHost.Global.GetPackagePath("VL.HelpAssets");
 
         var entries = new Dictionary<string, object>();
 
@@ -29,7 +29,7 @@ public class SoundAsset : DynamicEnumBase<SoundAsset, SoundAssetDefinition>
 
 public class SoundAssetDefinition : DynamicEnumDefinitionBase<SoundAssetDefinition>
 {
-    protected override IReadOnlyDictionary<string, object> GetEntries() => Helper.GetFiles("sounds");
+    protected override IReadOnlyDictionary<string, object> GetEntries() => Helper.GetFiles("assets\\sounds");
     protected override IObservable<object> GetEntriesChangedObservable() => Observable.Empty<object>();
 }
 
@@ -42,6 +42,6 @@ public class ImageAsset : DynamicEnumBase<ImageAsset, ImageAssetDefinition>
 
 public class ImageAssetDefinition : DynamicEnumDefinitionBase<ImageAssetDefinition>
 {
-    protected override IReadOnlyDictionary<string, object> GetEntries() => Helper.GetFiles("images");
+    protected override IReadOnlyDictionary<string, object> GetEntries() => Helper.GetFiles("assets\\images");
     protected override IObservable<object> GetEntriesChangedObservable() => Observable.Empty<object>();
 }

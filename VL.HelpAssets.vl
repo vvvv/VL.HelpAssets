@@ -145,6 +145,5 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="EQrnGWb5pi9OI0YSjTWm2o" Location="VL.Stride" Version="2025.7.2" />
   <PlatformDependency Id="GIgT0KTYMmwN1P8YO7r4FY" Location="./lib/net8.0/VL.HelpAssets.dll" />
 </Document>
