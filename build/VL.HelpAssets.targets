@@ -1,12 +1,5 @@
 <Project>
   <ItemGroup>
-    <Assets Include="$(MSBuildThisFileDirectory)\..\assets\**" />
+    <None Include="$(MSBuildThisFileDirectory)\..\assets\**" LinkBase="assets" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
-  <Target Name="CopyAssets" AfterTargets="Publish">
-  
-    <Message Text="Copying Assets" Importance="high"/>
-	<Copy
-        SourceFiles="@(Assets)" DestinationFiles="@(Assets->'$(VLExportPath)\$(TargetName)\assets\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="True"
-    />
-  </Target>
 </Project>
