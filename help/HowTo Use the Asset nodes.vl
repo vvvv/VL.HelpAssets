@@ -15,23 +15,18 @@
       </p:NodeReference>
       <Patch Id="MlFcDBRindDNSvFrZzYJ2E">
         <Canvas Id="OUydJ9rRCczL9LQmhh3koc" CanvasType="Group">
-          <Node Bounds="329,237,69,19" Id="Gs5yV6RYZCaO8Eo39d82En">
+          <Node Bounds="175,180,69,19" Id="Gs5yV6RYZCaO8Eo39d82En">
             <p:NodeReference LastCategoryFullName="System.Help" LastDependency="VL.HelpAssets.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="SoundAsset" />
+              <Choice Kind="ProcessAppFlag" Name="AudioAsset" />
             </p:NodeReference>
             <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="NG0k8OYn7LiLfjXMsjZTxD" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="E7LMLqei1dYOiFApFUzJSB" Name="Asset" Kind="InputPin" />
             <Pin Id="Csn2vcUxPIkNJvSE7e8rB6" Name="File Path" Kind="OutputPin" />
           </Node>
-          <Pad Id="C5k4c3PdfnqLoSUahlVNwE" Comment="File Path" Bounds="331,288,244,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="GUj5laHAwKzQdc4CBOELmp" Comment="Asset" Bounds="331,210,198,15" ShowValueBox="true" isIOBox="true" Value="kick-hardstyle-sample-149280.mp3">
-            <p:TypeAnnotation LastCategoryFullName="System.Help" LastDependency="VL.HelpAssetsUtils.csproj">
-              <Choice Kind="TypeFlag" Name="SoundAsset" />
-            </p:TypeAnnotation>
-          </Pad>
-          <Node Bounds="728,237,69,19" Id="TlXUvVeLyxAN0muRkJWrVh">
+          <Pad Id="C5k4c3PdfnqLoSUahlVNwE" Comment="File Path" Bounds="177,231,244,15" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="175,310,69,19" Id="TlXUvVeLyxAN0muRkJWrVh">
             <p:NodeReference LastCategoryFullName="System.Help" LastDependency="VL.HelpAssets.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="ImageAsset" />
@@ -41,10 +36,88 @@
             <Pin Id="FsLj4EyAOH3Mlr6EZ4kLAg" Name="Asset" Kind="InputPin" />
             <Pin Id="CZ6nKBBBxbZMuTfNBqS5WY" Name="File Path" Kind="OutputPin" />
           </Node>
-          <Pad Id="RxoJfGd3HS6PYaq3XL8VoL" Comment="File Path" Bounds="730,288,244,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="VcC9HZI2rbgOnSBO4vPi53" Comment="Asset" Bounds="730,210,169,15" ShowValueBox="true" isIOBox="true" Value="ExampleTexture_Basecolor.jpg">
+          <Pad Id="RxoJfGd3HS6PYaq3XL8VoL" Comment="File Path" Bounds="177,361,244,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="VcC9HZI2rbgOnSBO4vPi53" Comment="Asset" Bounds="177,283,177,15" ShowValueBox="true" isIOBox="true" Value="ExampleTexture_Basecolor.jpg">
             <p:TypeAnnotation LastCategoryFullName="System.Help" LastDependency="VL.HelpAssetsUtils.csproj">
               <Choice Kind="TypeFlag" Name="ImageAsset" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="CHEw0vvJxf4OxVm2st9wic" Comment="Asset" Bounds="177,153,198,15" ShowValueBox="true" isIOBox="true" Value="demo.wav">
+            <p:TypeAnnotation LastCategoryFullName="System.Help" LastDependency="VL.HelpAssets.vl">
+              <Choice Kind="TypeFlag" Name="AudioAsset" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="I5EPbgg3GCrQDgtcThshQe" Bounds="177,76,197,42" ShowValueBox="true" isIOBox="true" Value="Quickly access demo assets for use in help patches">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="175,450,61,19" Id="P5qG9xku1ziPXGC3E8EgpV">
+            <p:NodeReference LastCategoryFullName="System.Help" LastDependency="VL.HelpAssets.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="MiscAsset" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="NQuaTWSM0bvOUlZQ6J0s16" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="T39XP6xVOwGOtmCCftfBQM" Name="Asset" Kind="InputPin" />
+            <Pin Id="Ne3Jls0gUOPOf1hNgyU55o" Name="File Path" Kind="OutputPin" />
+          </Node>
+          <Pad Id="H6M3ysQoU4vPMSC12LV4IK" Comment="File Path" Bounds="177,501,244,15" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="175,590,69,19" Id="CS4Nyut9b8nNkgnXtEpSFV">
+            <p:NodeReference LastCategoryFullName="System.Help" LastDependency="VL.HelpAssets.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="ModelAsset" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="VcfmZOqTqpnNUP1do7AUTj" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="VTJykki89vuMOYxV9eJ549" Name="Asset" Kind="InputPin" />
+            <Pin Id="J0ozrM0j3CBOpBpDKGoRgu" Name="File Path" Kind="OutputPin" />
+          </Node>
+          <Pad Id="KtcIWHZu8fQMG8jlSLZqtm" Comment="File Path" Bounds="177,641,244,15" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="175,730,84,19" Id="CjtW7e7wQP7Poa65e84O7i">
+            <p:NodeReference LastCategoryFullName="System.Help" LastDependency="VL.HelpAssets.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="SequenceAsset" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="H3YbWabSggkQcQl03xB7wa" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="FfBO8UGWovOPhVW23MVmXi" Name="Asset" Kind="InputPin" />
+            <Pin Id="CLXycy6E6RIQcEj83TzWmo" Name="File Path" Kind="OutputPin" />
+          </Node>
+          <Pad Id="SMMFAwpMQy0QVsjHndTdmZ" Comment="File Path" Bounds="177,781,244,15" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="175,870,67,19" Id="P7an42p3oIkNzSrcsQyWCO">
+            <p:NodeReference LastCategoryFullName="System.Help" LastDependency="VL.HelpAssets.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="VideoAsset" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="DhrS1kjJWiQMkzp2uSqYbk" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="HuvuuoynLC6PYsDVHLfOmB" Name="Asset" Kind="InputPin" />
+            <Pin Id="VJOEZU7VORiMIcHRPo9SIf" Name="File Path" Kind="OutputPin" />
+          </Node>
+          <Pad Id="Q1TUm7SheTCL9kQR06jP5w" Comment="File Path" Bounds="177,921,244,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="OpLryH2APbHN0o5RryHyp7" Comment="Asset" Bounds="177,420,98,15" ShowValueBox="true" isIOBox="true" Value="Worldcities.csv">
+            <p:TypeAnnotation LastCategoryFullName="System.Help" LastDependency="VL.HelpAssets.vl">
+              <Choice Kind="TypeFlag" Name="MiscAsset" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="OvDYVreNJYAM5bRydWnxTP" Comment="Asset" Bounds="177,560,114,15" ShowValueBox="true" isIOBox="true" Value="astroBoy_walk.dae">
+            <p:TypeAnnotation LastCategoryFullName="System.Help" LastDependency="VL.HelpAssets.vl">
+              <Choice Kind="TypeFlag" Name="ModelAsset" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="Lr7ZB5dQABUMyEOr9FRRiZ" Comment="Asset" Bounds="177,700,88,15" ShowValueBox="true" isIOBox="true" Value="rotating-quad">
+            <p:TypeAnnotation LastCategoryFullName="System.Help" LastDependency="VL.HelpAssets.vl">
+              <Choice Kind="TypeFlag" Name="SequenceAsset" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="HFiJhySL1ZbLDFVHAiRcct" Comment="Asset" Bounds="177,840,106,15" ShowValueBox="true" isIOBox="true" Value="Birds_H264.mp4">
+            <p:TypeAnnotation LastCategoryFullName="System.Help" LastDependency="VL.HelpAssets.vl">
+              <Choice Kind="TypeFlag" Name="VideoAsset" />
             </p:TypeAnnotation>
           </Pad>
         </Canvas>
@@ -55,11 +128,19 @@
           <Fragment Id="UoKlCbIpoX7PUanQEgwcSb" Patch="U2fiaQWr4QGNYMvTcXS899" Enabled="true" />
         </ProcessDefinition>
         <Link Id="S7u3cFlxeIwNuk8gQhAv3R" Ids="Csn2vcUxPIkNJvSE7e8rB6,C5k4c3PdfnqLoSUahlVNwE" />
-        <Link Id="LwgbgCZpXeZMyfhaEfhMg9" Ids="GUj5laHAwKzQdc4CBOELmp,E7LMLqei1dYOiFApFUzJSB" />
         <Link Id="UAxKavKmN55NvdKvPnboYl" Ids="CZ6nKBBBxbZMuTfNBqS5WY,RxoJfGd3HS6PYaq3XL8VoL" />
         <Link Id="QTIiVXvrrwENt1gX1ynVfz" Ids="VcC9HZI2rbgOnSBO4vPi53,FsLj4EyAOH3Mlr6EZ4kLAg" />
+        <Link Id="RG76rx0v6MTL2TOIWZUSkm" Ids="CHEw0vvJxf4OxVm2st9wic,E7LMLqei1dYOiFApFUzJSB" />
+        <Link Id="HnXSurBgn73LAjZ7wMxgVB" Ids="Ne3Jls0gUOPOf1hNgyU55o,H6M3ysQoU4vPMSC12LV4IK" />
+        <Link Id="LZfCdBMiDq4OH18BWlS07R" Ids="J0ozrM0j3CBOpBpDKGoRgu,KtcIWHZu8fQMG8jlSLZqtm" />
+        <Link Id="SfKbubjx6pwPnyXrjbQiW8" Ids="CLXycy6E6RIQcEj83TzWmo,SMMFAwpMQy0QVsjHndTdmZ" />
+        <Link Id="LI7wNaKEfNqM4ZwGz7wFEw" Ids="VJOEZU7VORiMIcHRPo9SIf,Q1TUm7SheTCL9kQR06jP5w" />
+        <Link Id="IrKjjPC7e6gMK6XWge81mX" Ids="OpLryH2APbHN0o5RryHyp7,T39XP6xVOwGOtmCCftfBQM" />
+        <Link Id="TSabvUPmPvuNQH2rsEDI52" Ids="OvDYVreNJYAM5bRydWnxTP,VTJykki89vuMOYxV9eJ549" />
+        <Link Id="Otp9IjUB991Pe94AL3LbbL" Ids="Lr7ZB5dQABUMyEOr9FRRiZ,FfBO8UGWovOPhVW23MVmXi" />
+        <Link Id="ANDnvlbDjzqK9blFqTznMs" Ids="HFiJhySL1ZbLDFVHAiRcct,HuvuuoynLC6PYsDVHLfOmB" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="RJi8O243sx0MqfJSP4xn7I" Location="VL.HelpAssets" Version="0.0.0" />
+  <NugetDependency Id="RJi8O243sx0MqfJSP4xn7I" Location="VL.HelpAssets" Version="0.0.12-alpha" />
 </Document>
