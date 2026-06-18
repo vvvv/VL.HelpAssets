@@ -11,7 +11,7 @@ static class Helper
 
         var entries = new Dictionary<string, object>();
 
-        foreach (var entry in Directory.GetFiles(Path.Combine(basepath, path)))
+        foreach (var entry in Directory.GetFiles(Path.Combine(basepath, path), "*.*", SearchOption.AllDirectories))
         {
             entries.Add(Path.GetFileName(entry), entry);
         }

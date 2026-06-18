@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="GkWJSxHhxZnNwbQOalljjR" LanguageVersion="2025.7.2" Version="0.128">
-  <NugetDependency Id="IyiAeVnJn8eOFmQNS7tLA5" Location="VL.CoreLib" Version="2025.7.2" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="GkWJSxHhxZnNwbQOalljjR" LanguageVersion="2026.8.0-0004-gfe502254ae" Version="0.128">
+  <NugetDependency Id="IyiAeVnJn8eOFmQNS7tLA5" Location="VL.CoreLib" />
   <Patch Id="LiSblKyYbg0MvObrqHz81g">
     <Canvas Id="FthWPMWPZoIPjTzhNXeOA2" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -47,7 +47,7 @@
               <Choice Kind="TypeFlag" Name="AudioAsset" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="I5EPbgg3GCrQDgtcThshQe" Bounds="177,76,197,42" ShowValueBox="true" isIOBox="true" Value="Quickly access demo assets for use in help patches">
+          <Pad Id="I5EPbgg3GCrQDgtcThshQe" Bounds="177,79,197,42" ShowValueBox="true" isIOBox="true" Value="Quickly access demo assets for use in help patches">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -100,7 +100,7 @@
             <Pin Id="VJOEZU7VORiMIcHRPo9SIf" Name="File Path" Kind="OutputPin" />
           </Node>
           <Pad Id="Q1TUm7SheTCL9kQR06jP5w" Comment="File Path" Bounds="177,921,244,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="OpLryH2APbHN0o5RryHyp7" Comment="Asset" Bounds="177,420,98,15" ShowValueBox="true" isIOBox="true" Value="Worldcities.csv">
+          <Pad Id="OpLryH2APbHN0o5RryHyp7" Comment="Asset" Bounds="177,420,106,15" ShowValueBox="true" isIOBox="true" Value="Worldcities.csv">
             <p:TypeAnnotation LastCategoryFullName="System.Help" LastDependency="VL.HelpAssets.vl">
               <Choice Kind="TypeFlag" Name="MiscAsset" />
             </p:TypeAnnotation>
@@ -110,7 +110,7 @@
               <Choice Kind="TypeFlag" Name="ModelAsset" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="Lr7ZB5dQABUMyEOr9FRRiZ" Comment="Asset" Bounds="177,700,88,15" ShowValueBox="true" isIOBox="true" Value="rotating-quad">
+          <Pad Id="Lr7ZB5dQABUMyEOr9FRRiZ" Comment="Asset" Bounds="177,700,99,15" ShowValueBox="true" isIOBox="true" Value="rotating-quad">
             <p:TypeAnnotation LastCategoryFullName="System.Help" LastDependency="VL.HelpAssets.vl">
               <Choice Kind="TypeFlag" Name="SequenceAsset" />
             </p:TypeAnnotation>
@@ -142,5 +142,5 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="RJi8O243sx0MqfJSP4xn7I" Location="VL.HelpAssets" Version="0.0.12-alpha" />
+  <NugetDependency Id="RJi8O243sx0MqfJSP4xn7I" Location="VL.HelpAssets" />
 </Document>
